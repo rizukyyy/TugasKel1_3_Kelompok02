@@ -9,8 +9,8 @@ Cara mengambil tautan: buka tab **Commits**, klik commit yang dimaksud, salin al
 |No|Stambuk|Nama|Kode yang dikerjakan|Uraian pekerjaan individu|Bukti kontribusi (tautan)|Keterangan (Selesai / Tunda / Gagal)|
 |-|-|-|-|-|-|-|
 |Ct.|13020240000|(Contoh) Ani|A1, B1|Menyusun register 6 stakeholder dan peta power/interest; menulis batasan teknologi, bisnis, dan operasional|Riwayat berkas laporan/A2-stakeholder.md (tautan); commit "\[A3] tambah batasan" (tautan)|Selesai|
-|1 |13020240084|Zulfajrin |A1, B1 |menyusun tabel 4 konteks arsitektur (teknis, siklus hidup proyek, bisnis, profesional) dan mengidentifikasi karakteristik arsitektur utama (security, availability, usability, data integrity) pada Layanan Izin dan Sakit|Riwayat berkas laporan/A1-konteks-arsitektur.md (573850b07de638a881f1ef2a69c5983a9509bd1e); <br /> "\[A1] mengisi tabel 4 konteks arsitektur"<br />Riwayat berkas laporan/B1-karakteristik.md<br />(c9619e39b3b55639cdf29035e2b169ed85203810); <br /> "\[B1] menyusun tabel karakteristik arsitektur"|Selesai|
-|2|||||||
+|1|13020240084|Zulfajrin|A1, B1|menyusun tabel 4 konteks arsitektur (teknis, siklus hidup proyek, bisnis, profesional) dan mengidentifikasi karakteristik arsitektur utama (security, availability, usability, data integrity) pada Layanan Izin dan Sakit|Riwayat berkas laporan/A1-konteks-arsitektur.md (573850b07de638a881f1ef2a69c5983a9509bd1e); <br /> "\[A1] mengisi tabel 4 konteks arsitektur"<br />Riwayat berkas laporan/B1-karakteristik.md<br />(c9619e39b3b55639cdf29035e2b169ed85203810); <br /> "\[B1] menyusun tabel karakteristik arsitektur"|Selesai|
+|2|13020240075|Airil Nasbi|A4, B5|Minimal 3 ASR (fungsional, atribut kualitas, atau batasan) beserta alasan mengapa kebutuhan itu sangat memengaruhi arsitektur.<br />dan Minimal 2 pasang karakteristik yang saling memengaruhi (contoh: keamanan dan kinerja). Jelaskan dampaknya dan karakteristik mana yang didahulukan beserta alasannya.|Riwayat berkas laporan/B4-minimal 3 ASR.md (1f58beadbdc5fc7afcb6600bd279e41b45240a97); \[A4]<br />Rwayat berkas laporan/B5-minimal 2 pasang karasteristik.md (be8a2eadf94bb4c7b1699c8f05d0d1840db80a4e); \[B5]|selesai|
 |3|||||||
 |4|||||||
 |5|||||||
