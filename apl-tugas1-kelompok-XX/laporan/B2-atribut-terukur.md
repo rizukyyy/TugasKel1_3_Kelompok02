@@ -1,6 +1,7 @@
 # B2. Atribut Kualitas yang Terukur
 
  Penanggung jawab: [Muh.Aslam]
+ 
 Atribut terukur merupakan atribut kualitas yang dapat dinilai menggunakan ukuran atau indikator tertentu. Pada subsistem Attendance Management, atribut terukur digunakan untuk menilai kualitas layanan pengajuan izin dan sakit, mulai dari pengajuan, pengumpulan bukti, persetujuan, hingga pencatatan kehadiran.
 
 | No. | Atribut Terukur | Indikator Pengukuran | Target |
