@@ -7,13 +7,13 @@ Bagian ini menjelaskan keputusan arsitektur untuk layanan izin dan sakit yang me
 ## 1. Ringkasan ADR-001: Penerapan Antrean Pesan dan Worker untuk Pencatatan Presensi
 
 - **Status:** Diusulkan
-- **ASR terkait:** [Sesuaikan dengan A4]
+- **ASR terkait:** ASR-1 (Keandalan dan Integrasi Pencatatan Presensi)
 - **ADR lengkap:** [ADR-001-antrean-pesan-pencatatan-presensi.md](../adr/ADR-001-antrean-pesan-pencatatan-presensi.md)
 
 ## 2. Ringkasan ADR-002: Penerapan Pembatasan Hak Akses dan Pemisahan Penyimpanan Bukti
 
 - **Status:** Diusulkan
-- **ASR terkait:** [Sesuaikan dengan A4]
+- **ASR terkait:** ASR-2 (Keamanan dan Kerahasiaan Data Pengajuan serta Bukti)
 - **ADR lengkap:** [ADR-002-keamanan-akses-bukti.md](../adr/ADR-002-keamanan-akses-bukti.md)
 
 ## 3. Rencana Komunikasi Keputusan Arsitektur
