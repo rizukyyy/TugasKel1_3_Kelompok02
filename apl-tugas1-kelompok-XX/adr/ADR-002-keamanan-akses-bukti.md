@@ -1,4 +1,4 @@
-# ADR-001: Penerapan Antrean Pesan dan Worker untuk Pencatatan Presensi
+# ADR-002: Penerapan Pembatasan Hak Akses dan Pemisahan Penyimpanan Bukti Izin dan Sakit
 
 - **Status:** Diusulkan
 - **Tanggal:** 31-10-2026
@@ -6,43 +6,42 @@
 
 ## Context
 
-Layanan izin dan sakit digunakan mahasiswa untuk mengajukan izin atau sakit dengan melampirkan bukti pendukung. Setelah pengajuan diperiksa dan disetujui oleh pihak yang berwenang, informasi pengajuan harus diteruskan ke sistem presensi agar keterangan izin atau sakit mahasiswa dapat dicatat.
+Layanan izin dan sakit mengelola informasi pengajuan mahasiswa beserta bukti pendukung yang diunggah. Informasi tersebut perlu dilindungi agar hanya dapat diakses oleh pengguna yang memiliki kewenangan.
 
-Proses pencatatan presensi dan pengiriman notifikasi melibatkan layanan yang berbeda. Apabila seluruh proses dilakukan secara langsung dalam satu alur, keterlambatan atau gangguan pada layanan presensi dapat memengaruhi proses pengajuan dan persetujuan.
+Mahasiswa hanya diperbolehkan mengajukan dan melihat pengajuan miliknya sendiri, sedangkan pihak penyetuju memiliki kewenangan untuk memeriksa bukti serta memberikan persetujuan atau penolakan terhadap pengajuan. Petugas presensi memiliki akses sesuai tanggung jawabnya dalam memeriksa pencatatan izin atau sakit.
 
-Oleh karena itu, dibutuhkan mekanisme yang dapat memisahkan proses persetujuan, pencatatan presensi, dan pengiriman notifikasi agar setiap proses dapat dijalankan secara terpisah.
+Selain itu, berkas bukti izin dan sakit perlu dikelola secara terpisah dari data pengajuan agar penyimpanan dan pengambilan dokumen dapat dilakukan secara terstruktur.
 
 ## Decision
 
-Kami akan menerapkan antrean pesan (message queue) untuk menampung informasi pengajuan yang telah disetujui.
+Kami akan menerapkan Role-Based Access Control (RBAC) untuk membatasi hak akses berdasarkan peran mahasiswa, pihak penyetuju, dan petugas presensi.
 
-Pesan dari server aplikasi akan diproses oleh dua worker, yaitu Worker Pencatatan Presensi dan Worker Notifikasi.
+Setiap permintaan akses akan diperiksa melalui Server Web dan API untuk memastikan pengguna memiliki kewenangan terhadap data yang diminta.
 
-Worker Pencatatan Presensi bertugas meneruskan informasi pengajuan yang telah disetujui ke Layanan Presensi melalui HTTPS API, kemudian memperbarui status pencatatan pada Basis Data Izin dan Sakit.
+Kami juga akan memisahkan penyimpanan berkas bukti dari Basis Data Izin dan Sakit. Informasi pengajuan dan statusnya disimpan dalam basis data, sedangkan dokumen bukti disimpan pada Penyimpanan Berkas Bukti.
 
-Sementara itu, Worker Notifikasi bertugas meneruskan informasi status pengajuan kepada Layanan Email dan Notifikasi melalui SMTP atau API.
+Pengambilan berkas dilakukan melalui Server Web dan API setelah pemeriksaan hak akses pengguna.
 
 ## Consequences
 
 **Dampak positif:**
-- Memisahkan proses persetujuan dengan pencatatan presensi dan pengiriman notifikasi.
-- Mengurangi ketergantungan langsung antara server aplikasi dan layanan presensi.
-- Memungkinkan proses pencatatan dan notifikasi dilakukan secara terpisah.
-- Memudahkan penanganan ulang pesan apabila terjadi kegagalan pemrosesan.
+- Membatasi akses pengajuan sesuai kewenangan masing-masing pengguna.
+- Melindungi kerahasiaan berkas bukti izin dan sakit.
+- Memisahkan pengelolaan data pengajuan dengan penyimpanan berkas.
+- Memudahkan pengelolaan dan pengambilan kembali bukti pendukung.
 
 **Dampak negatif:**
-- Membutuhkan komponen tambahan berupa antrean pesan dan worker.
-- Menambah kompleksitas pemantauan proses pengiriman dan pemrosesan pesan.
-- Pencatatan presensi tidak selalu terjadi secara langsung setelah pengajuan disetujui.
-- Memerlukan mekanisme untuk mencegah pemrosesan pesan yang sama secara berulang.
+- Membutuhkan pemeriksaan hak akses pada setiap permintaan pengguna.
+- Menambah kompleksitas pengelolaan peran dan kewenangan.
+- Membutuhkan pengelolaan penyimpanan serta pencadangan berkas secara terpisah.
 
-**Trade-off:** Keandalan dan pemisahan proses pencatatan presensi diprioritaskan dengan menerima kemungkinan keterlambatan pencatatan akibat pemrosesan melalui antrean pesan.
+**Trade-off:** Keamanan dan kerahasiaan data pengajuan serta bukti diprioritaskan meskipun pemeriksaan hak akses menambah proses pada setiap permintaan pengguna.
 
 ## Compliance
 
-- Menguji alur pengajuan mulai dari persetujuan hingga pencatatan ke presensi.
-- Memastikan pesan pengajuan yang disetujui dapat diterima dan diproses oleh worker.
-- Memastikan status pencatatan diperbarui pada Basis Data Izin dan Sakit.
-- Menguji pengiriman notifikasi kepada pengguna.
-- Menguji penanganan kegagalan ketika Layanan Presensi tidak tersedia.
-- Memastikan pemrosesan ulang pesan tidak menghasilkan pencatatan presensi ganda.
+- Menguji hak akses berdasarkan peran mahasiswa, pihak penyetuju, dan petugas presensi.
+- Memastikan mahasiswa hanya dapat melihat pengajuan miliknya sendiri.
+- Memastikan pihak penyetuju hanya dapat mengakses pengajuan sesuai kewenangannya.
+- Memastikan pengguna tanpa hak akses tidak dapat mengambil berkas bukti.
+- Melakukan pemeriksaan kode untuk memastikan otorisasi diterapkan pada sisi server.
+- Memastikan pemisahan data pengajuan dan penyimpanan berkas berjalan sesuai rancangan.
