@@ -6,7 +6,7 @@ Struktur modul menggambarkan pembagian sistem menjadi beberapa lapisan yang memi
 
 ### Diagram Struktur Modul
 
-![Diagram Struktur Modul](diagram/B3-Strukturmodul.drawio.png)
+![Diagram Struktur Modul](../diagram/B3-Strukturmodul.drawio.png)
 
 ### Penjelasan
 
@@ -47,7 +47,7 @@ Struktur komponen dan konektor menggambarkan komponen-komponen yang membentuk si
 
 ### Diagram Struktur Komponen dan Konektor (C&C)
 
-![Diagram Struktur C\&C](diagram/B3-StrukturC\&C.drawio.png)
+![Diagram Struktur C&C](../diagram/B3-StrukturC&C.drawio.png)
 
 ### Penjelasan
 
@@ -84,7 +84,7 @@ Struktur alokasi menggambarkan penempatan komponen perangkat lunak pada perangka
 
 ### Diagram Struktur Alokasi
 
-![Diagram Struktur Alokasi](diagram/B3-Struktur-alokasi.drawio.png)
+![Diagram Struktur Alokasi](../diagram/B3-Struktur-alokasi.drawio.png)
 
 ### Penjelasan
 
