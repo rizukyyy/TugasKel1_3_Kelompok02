@@ -1,11 +1,12 @@
-# A2. Wawancara Stakeholder
+# Wawancara 5
 
-Penanggung jawab: Muh. Aslam
-
-## 5. Pengembang Sistem
+- **Tanggal:** 30-10-2026
+- **Responden :** Pengembang sistem
+- **Pewawancara:** Muh. Aslam
+- **Layanan yang dibahas:** Pengajuan izin atau sakit mahasiswa
 
 | No. | Pertanyaan | Jawaban |
 |---|---|---|
-| 1 | Teknologi, basis data, dan sistem apa yang perlu diintegrasikan atau dipertimbangkan dalam pengembangan? | Perlu terintegrasi dengan sistem informasi akademik (data mahasiswa, dosen, jadwal). Basis data memakai MySQL atau PostgreSQL, dengan aplikasi web yang bisa diakses dari ponsel dan komputer. |
-| 2 | Bagaimana kebutuhan keamanan data, termasuk hak akses setiap peran dan penyimpanan file bukti? | Kata sandi terenkripsi, hak akses sesuai peran, pembatasan jenis dan ukuran file, penyimpanan bukti terenkripsi, serta pencatatan aktivitas pengguna. |
-| 3 | Bagaimana rencana pemeliharaan sistem, seperti log kesalahan, backup, dan penanganan keluhan pengguna? | Log kesalahan dicatat otomatis dan ditinjau berkala, backup dilakukan harian, dan keluhan pengguna ditangani lewat formulir atau email. |
+| 1 | Teknologi dan sistem apa yang perlu diintegrasikan? | Sistem informasi akademik, basis data MySQL atau PostgreSQL, aplikasi web. |
+| 2 | Bagaimana kebutuhan keamanan dan hak akses? | Kata sandi terenkripsi, hak akses sesuai peran, pembatasan file, pencatatan aktivitas. |
+| 3 | Bagaimana rencana pemeliharaan? | Log otomatis, backup harian, keluhan lewat formulir atau email. |
