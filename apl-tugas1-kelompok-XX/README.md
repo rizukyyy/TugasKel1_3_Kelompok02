@@ -26,19 +26,19 @@ Status: Belum / Draf / Selesai. Perbarui tabel ini setiap ada perubahan.
 
 | Kode | Berkas | Penanggung jawab | Status |
 |---|---|---|---|
-| BAB I | laporan/BAB1-pendahuluan.md | | Belum |
-| A1 | laporan/A1-konteks-arsitektur.md | | Selesai |
-| A2 | laporan/A2-stakeholder.md | |  Selesai |
-| A3 | laporan/A3-batasan.md | | Belum |
-| A4 | laporan/A4-asr.md | | Selesai |
+| BAB I | laporan/BAB1-pendahuluan.md |Zulfajrin | Belum |
+| A1 | laporan/A1-konteks-arsitektur.md |Zulfajrin | Selesai |
+| A2 | laporan/A2-stakeholder.md |Muh Aslam |  Selesai |
+| A3 | laporan/A3-batasan.md |Ariel Satyawan Syarah | Selesai |
+| A4 | laporan/A4-asr.md |Airil Nasbi Subsistem | Selesai |
 | A5 | laporan/A5-keputusan-arsitektur.md dan adr/ |Andi Muhammad Dzaki Idrus | Selesai |
-| B1 | laporan/B1-karakteristik.md | | Selesai |
-| B2 | laporan/B2-atribut-terukur.md | |  Selesai |
+| B1 | laporan/B1-karakteristik.md |Zulfajrin | Selesai |
+| B2 | laporan/B2-atribut-terukur.md |Muh Aslam |  Selesai |
 | B3 | laporan/B3-tiga-struktur.md dan diagram/ | Andi Muhammad Dzaki Idrus | Belum |
-| B4 | laporan/B4-iso-25010.md | | Belum |
-| B5 | laporan/B5-trade-off.md | | Selesai |
-| BAB IV | laporan/BAB4-penutup.md | | Belum |
-| Pustaka | laporan/daftar-pustaka.md | | Belum |
+| B4 | laporan/B4-iso-25010.md |Ariel Satyawan Syarah | Selesai |
+| B5 | laporan/B5-trade-off.md | | Belum |
+| BAB IV | laporan/BAB4-penutup.md |Zulfajrin | Belum |
+| Pustaka | laporan/daftar-pustaka.md |Zulfajrin | Belum |
 
 ## Laporan PDF terakhir
 
