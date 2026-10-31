@@ -7,7 +7,7 @@
 
 Pada perancangan arsitektur perangkat lunak untuk layanan izin dan sakit mahasiswa, diperlukan identifikasi karakteristik yang dapat memengaruhi kualitas dan struktur sistem. Layanan ini mencakup pengajuan izin, pengunggahan bukti pendukung, pemeriksaan dan persetujuan, serta pencatatan status izin ke dalam sistem presensi.
 
-Berdasarkan kebutuhan layanan tersebut, diidentifikasi sepuluh kandidat karakteristik yang relevan. Kandidat-kandidat ini dikelompokkan berdasarkan kategori arsitektur, yaitu operasional, struktural, dan lintas sektor, serta sifatnya, yaitu eksplisit atau implisit.
+Identifikasi karakteristik kualitas diperlukan agar kebutuhan sistem tidak hanya berfokus pada fungsi utama, tetapi juga memperhatikan kualitas produk perangkat lunak.
 
 | No. | Kandidat Karakteristik | Kategori | Sifat | Alasan |
 |---|---|---|---|---|
@@ -47,13 +47,21 @@ Pemilihan dilakukan dengan mempertimbangkan tiga ciri: pengaruh terhadap keputus
 
 ### a. Keamanan dan Privasi
 
-Keamanan dan privasi dipilih karena layanan mengelola informasi mahasiswa serta dokumen pendukung izin dan sakit. Karakteristik ini memengaruhi keputusan arsitektur melalui penerapan autentikasi, otorisasi berbasis peran, perlindungan penyimpanan dokumen, dan pencatatan aktivitas pengguna. Pengujian dapat dilakukan untuk memastikan bahwa dokumen hanya dapat diakses oleh pihak yang memiliki kewenangan.
+Keamanan dan privasi dipilih karena layanan mengelola informasi mahasiswa serta dokumen pendukung izin dan sakit. Karakteristik ini memengaruhi keputusan arsitektur melalui penerapan autentikasi, otorisasi berbasis peran, perlindungan penyimpanan dokumen, dan pencatatan aktivitas pengguna.
+
+Perlindungan tersebut penting karena informasi kesehatan termasuk kategori data pribadi spesifik berdasarkan Undang-Undang Nomor 27 Tahun 2022 [2]. Selain itu, NIST SP 800-53 Rev. 5 menyediakan panduan kontrol keamanan dan privasi untuk melindungi sistem informasi dan data yang dikelolanya [4].
+
+Dalam pengelolaan dokumen, sistem juga perlu melakukan validasi jenis dan ukuran file, membatasi pengguna yang dapat mengunggah dokumen, serta mengatur penyimpanan file dengan aman. Prinsip-prinsip tersebut sejalan dengan panduan OWASP File Upload Cheat Sheet [5].
 
 ### b. Integritas Data
 
-Integritas data dipilih karena hasil persetujuan izin atau sakit harus dicatat secara benar pada sistem presensi. Kesalahan integrasi dapat menyebabkan ketidaksesuaian status pengajuan dengan catatan kehadiran mahasiswa. Oleh karena itu, arsitektur perlu memperhatikan konsistensi penyimpanan data, pencegahan pemrosesan ganda, dan penanganan kegagalan integrasi.
+Integritas data dipilih karena hasil persetujuan izin atau sakit harus dicatat secara benar pada sistem presensi. Kesalahan integrasi dapat menyebabkan ketidaksesuaian status pengajuan dengan catatan kehadiran mahasiswa.
+
+Oleh karena itu, arsitektur perlu memperhatikan konsistensi penyimpanan data, pencegahan pemrosesan ganda, dan penanganan kegagalan integrasi
 
 ### c. Kinerja
 
-Kinerja dipilih karena pengguna membutuhkan layanan yang memberikan respons dalam waktu yang wajar. Waktu respons yang terlalu lama dapat menghambat mahasiswa saat mengajukan izin dan dosen ketika memeriksa pengajuan. Karakteristik ini memengaruhi rancangan pengolahan permintaan, optimasi basis data, dan kapasitas infrastruktur serta dapat dinilai melalui pengujian beban.
+Kinerja dipilih karena pengguna membutuhkan layanan yang memberikan respons dalam waktu yang wajar. Waktu respons yang terlalu lama dapat menghambat mahasiswa saat mengajukan izin dan dosen ketika memeriksa pengajuan.
+
+Karakteristik ini memengaruhi rancangan pengolahan permintaan, optimasi basis data, dan kapasitas infrastruktur. Pengukuran kinerja dapat dilakukan melalui pengujian waktu respons, jumlah permintaan yang dapat diproses, serta pengujian beban
 
