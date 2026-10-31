@@ -1,6 +1,9 @@
-# A2. Wawancara Stakeholder
+#  Wawancara 4
 
-Penanggung jawab: Muh. Aslam
+- **Tanggal:** 29-10-2026
+- **Responden :** Staf Operator Akademik
+- **Pewawancara:** Muh. Aslam
+- **Layanan yang dibahas:** Pengajuan izin atau sakit mahasiswa
 
 ## 4. Operator Akademik
 
