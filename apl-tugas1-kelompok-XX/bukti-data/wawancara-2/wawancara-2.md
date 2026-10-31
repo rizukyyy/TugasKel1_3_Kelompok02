@@ -1,6 +1,9 @@
-# A2. Wawancara Stakeholder
+# Ringkasan Wawancara 2
 
-Penanggung jawab: Muh. Aslam
+- **Tanggal:** 27-10-2026
+- **Responden :** Dosen pengampu mata kuliah
+- **Pewawancara:** Muh. Aslam
+- **Layanan yang dibahas:** Pengajuan izin atau sakit mahasiswa
 
 ## 2. Dosen
 
