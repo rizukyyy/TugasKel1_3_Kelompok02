@@ -9,5 +9,5 @@ Stakeholder adalah pihak-pihak yang terlibat atau memiliki kepentingan terhadap 
 | 1 | Mahasiswa | Mengajukan izin atau sakit, mengunggah bukti pendukung, dan melihat status pengajuan. |
 | 2 | Dosen | Memeriksa pengajuan izin atau sakit dan memberikan persetujuan sesuai kewenangan. |
 | 3 | Admin Akademik | Mengelola data kehadiran, memeriksa kelengkapan data, dan membuat laporan kehadiran. |
-| 4 | Ketua Program Studi | Memantau rekapitulasi kehadiran mahasiswa dan mengevaluasi kedisiplinan mahasiswa. |
+| 4 | Operator Akademik | Membantu mengelola data akademik dan membuat rekapitulasi kehadiran mahasiswa. |
 | 5 | Pengembang Sistem | Mengembangkan, memelihara, dan memperbaiki sistem agar berfungsi dengan baik. |
