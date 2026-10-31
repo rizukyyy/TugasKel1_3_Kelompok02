@@ -2,8 +2,6 @@
 
 Penanggung jawab: [Muh.Aslam]
 
-Stakeholder adalah pihak-pihak yang terlibat atau memiliki kepentingan terhadap sistem Attendance Management. Sistem ini digunakan untuk mengelola pengajuan izin dan sakit, bukti pendukung, persetujuan, serta pencatatan kehadiran.
-
 | No. | Stakeholder | Peran dan Kepentingan |
 |---|---|---|
 | 1 | Mahasiswa | Mengajukan izin atau sakit, mengunggah bukti pendukung, dan melihat status pengajuan. |
