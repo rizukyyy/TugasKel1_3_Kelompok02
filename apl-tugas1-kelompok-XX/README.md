@@ -17,7 +17,7 @@ Konteks & Keputusan Arsitektur (Pertemuan 5) serta Karakteristik Arsitektur & At
 | 2  |13020240088 |Muh Aslam                | @Muh.Aslam_13020240088          |A2 DAN B2 |
 | 3  |13020240103 |Ariel Satyawan Syarah    | @aariel10           | A3 DAN B4 |
 | 4  |13020240075 |Airil Nasbi              | @Airil Nasbi_13020240075       | A4 dan B5|
-| 5  |13020240306 |Andi Muhammad Dzaki Idrus| @           | |
+| 5  |13020240306 |Andi Muhammad Dzaki Idrus| @dzakiandi44      | |
  
 
 ## Peta berkas dan penanggung jawab
@@ -31,10 +31,10 @@ Status: Belum / Draf / Selesai. Perbarui tabel ini setiap ada perubahan.
 | A2 | laporan/A2-stakeholder.md | |  Selesai |
 | A3 | laporan/A3-batasan.md | | Belum |
 | A4 | laporan/A4-asr.md | | Selesai |
-| A5 | laporan/A5-keputusan-arsitektur.md dan adr/ | | Belum |
+| A5 | laporan/A5-keputusan-arsitektur.md dan adr/ |Andi Muhammad Dzaki Idrus | Selesai |
 | B1 | laporan/B1-karakteristik.md | | Selesai |
 | B2 | laporan/B2-atribut-terukur.md | |  Selesai |
-| B3 | laporan/B3-tiga-struktur.md dan diagram/ | | Belum |
+| B3 | laporan/B3-tiga-struktur.md dan diagram/ | Andi Muhammad Dzaki Idrus | Belum |
 | B4 | laporan/B4-iso-25010.md | | Belum |
 | B5 | laporan/B5-trade-off.md | | Selesai |
 | BAB IV | laporan/BAB4-penutup.md | | Belum |
