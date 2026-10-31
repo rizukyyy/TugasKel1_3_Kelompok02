@@ -37,8 +37,8 @@ Status: Belum / Draf / Selesai. Perbarui tabel ini setiap ada perubahan.
 | B3 | laporan/B3-tiga-struktur.md dan diagram/ | Andi Muhammad Dzaki Idrus | Belum |
 | B4 | laporan/B4-iso-25010.md |Ariel Satyawan Syarah | Selesai |
 | B5 | laporan/B5-trade-off.md | | Belum |
-| BAB IV | laporan/BAB4-penutup.md |Zulfajrin | Belum |
-| Pustaka | laporan/daftar-pustaka.md |Zulfajrin | Belum |
+| BAB IV | laporan/BAB4-penutup.md |Zulfajrin | Selesai |
+| Pustaka | laporan/daftar-pustaka.md |Zulfajrin | Selesai |
 
 ## Laporan PDF terakhir
 
