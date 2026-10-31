@@ -1,7 +1,7 @@
 # Ringkasan Wawancara 1
 
 - **Tanggal:** 26-10-2026
-- **Responden (peran saja):** Mahasiswa semester 5
+- **Responden :** Mahasiswa semester 5
 - **Pewawancara:** Muh. Aslam
 - **Layanan yang dibahas:** Pengajuan izin atau sakit mahasiswa
 
