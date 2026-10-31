@@ -1,4 +1,5 @@
 # A3. Batasan Sistem
+
 Penanggung jawab: Ariel Satyawan Syarah
 | Kategori | Batasan Sistem | Dampak terhadap Arsitektur |
 |---|---|---|
@@ -8,4 +9,3 @@ Penanggung jawab: Ariel Satyawan Syarah
 | Bisnis | Data izin dan sakit harus sesuai dengan aturan presensi mahasiswa, terutama dalam perhitungan persentase kehadiran sebagai syarat mengikuti ujian akhir. | Modul izin harus terintegrasi dengan modul presensi agar perubahan status tercatat secara akurat. |
 | Operasional | Sistem dikembangkan secara bertahap selama semester berjalan, dimulai dari pengajuan berkas hingga sinkronisasi dengan presensi. | Arsitektur perlu dibuat modular agar setiap fitur dapat dikembangkan dan diuji secara bertahap. |
 | Operasional | Sistem harus dapat digunakan oleh mahasiswa dan dosen dengan mudah serta menjaga kerahasiaan dokumen medis mahasiswa. | Arsitektur perlu menerapkan pengaturan hak akses dan pengamanan dokumen agar hanya pihak yang berwenang dapat melihatnya. |
-
