@@ -12,7 +12,7 @@ Penanggung jawab: Muh. Aslam
 
 | No. | Pertanyaan | Jawaban |
 
-|---|---|---|
+| :--- | :--- | :--- |
 
 | 1 | Bagaimana cara Anda mengajukan izin atau sakit saat ini, dan kendala apa yang paling sering Anda alami? | Saya mengajukan lewat WhatsApp ke dosen atau menyerahkan surat langsung. Kendalanya, pesan sering lambat dibalas, surat bisa hilang, dan status izin tidak jelas. |
 
